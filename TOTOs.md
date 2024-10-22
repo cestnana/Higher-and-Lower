@@ -10,3 +10,8 @@
 - [ ] Implement game loop (continue with correct choice becoming new A)
 - [ ] Track user's score (consecutive correct answers)
 
+## Basic Features
+- [ ] Initialize the game with a set of items and their rates/values
+- [ ] Implement game over condition (when user makes an incorrect choice)
+- [ ] Display final score at the end of the game
+
