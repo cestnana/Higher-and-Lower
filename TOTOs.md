@@ -15,3 +15,6 @@
 - [ ] Implement game over condition (when user makes an incorrect choice)
 - [ ] Display final score at the end of the game
 
+## Error Handling
+- [ ] Validate user input (ensure it's a valid choice: A or B)
+- [ ] Handle invalid inputs gracefully
