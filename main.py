@@ -8,6 +8,7 @@ def compare_items(item_a, item_b):
   return item_a['follower_count'] > item_b['follower_count']
 
 def main():
+  score = 0  # Initialize score
   item_a = choose_random_item()
   item_b = choose_random_item()
   print(f"Compare A: {item_a['name']}, a {item_a['description']}, from {item_a['country']}")
@@ -20,10 +21,13 @@ def main():
   
   if is_correct:
     print("You're right!")
+    score += 1
+    print(f"Your current score: {score}")
   else:
     print(f"Sorry, that's wrong. {correct_answer.upper()} has more followers.")
   
   print(f"A: {item_a['name']} has {item_a['follower_count']} million followers.")
   print(f"B: {item_b['name']} has {item_b['follower_count']} million followers.")
+  print(f"Final score: {score}")
 
 main()
