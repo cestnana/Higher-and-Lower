@@ -15,6 +15,15 @@ def main():
   user_choice = input("Who has more followers? Type 'A' or 'B': ").lower()
   is_correct = compare_items(item_a, item_b)
   print(is_correct)
+  correct_answer = 'a' if compare_items(item_a, item_b) else 'b'
+  is_correct = user_choice == correct_answer
   
+  if is_correct:
+    print("You're right!")
+  else:
+    print(f"Sorry, that's wrong. {correct_answer.upper()} has more followers.")
+  
+  print(f"A: {item_a['name']} has {item_a['follower_count']} million followers.")
+  print(f"B: {item_b['name']} has {item_b['follower_count']} million followers.")
 
 main()
