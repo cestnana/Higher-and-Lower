@@ -18,3 +18,8 @@
 ## Error Handling
 - [ ] Validate user input (ensure it's a valid choice: A or B)
 - [ ] Handle invalid inputs gracefully
+
+## Game Flow
+- [ ] Create a game start function
+- [ ] Implement a game over function
+- [ ] Add option to play again or quit
