@@ -23,3 +23,7 @@
 - [ ] Create a game start function
 - [ ] Implement a game over function
 - [ ] Add option to play again or quit
+
+## Data Management
+- [ ] Create a function to load items and their rates from a file or database
+- [ ] Ensure there are enough unique items for extended gameplay
