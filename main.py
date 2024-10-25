@@ -8,7 +8,9 @@ def choose_random_item():
 def compare_items(item_a, item_b):
   # Compare follower counts of two items and return True if item_a has more followers
   return item_a['follower_count'] > item_b['follower_count']
+  # What if the follower counts are equal?
 
+# Main function to run the game
 def main():
   score = 0  # Initialize score
   while True: # Infinite loop to keep the game running until the user quits
@@ -19,6 +21,7 @@ def main():
     print(f"Compare B: {item_b['name']}, a {item_b['description']}, from {item_b['country']}")
     # Get the user's choice and convert it to lowercase
     user_choice = input("Who has more followers? Type 'A' or 'B': ").lower()
+    # Compare follower counts of the two items
     is_correct = compare_items(item_a, item_b)
     # print(is_correct) # Test output
     # Determine the correct answer based on the follower count comparison
