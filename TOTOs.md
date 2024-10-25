@@ -26,4 +26,4 @@
 
 ## Data Management
 - [ ] Create a function to load items and their rates from a file or database
-- [ ] Ensure there are enough unique items for extended gameplay
+- [ ] Ensure there are enough unique items for extended game-play
