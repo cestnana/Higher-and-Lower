@@ -13,17 +13,21 @@ def compare_items(item_a, item_b):
 # Main function to run the game
 def main():
   score = 0  # Initialize score
-  while True: # Infinite loop to keep the game running until the user quits
+  while True:  # Infinite loop to keep the game running until the user quits
     item_a = choose_random_item()
     item_b = choose_random_item()
     # Display details of the two items for comparison
     print(f"Compare A: {item_a['name']}, a {item_a['description']}, from {item_a['country']}")
     print(f"Compare B: {item_b['name']}, a {item_b['description']}, from {item_b['country']}")
-    # Get the user's choice and convert it to lowercase
-    user_choice = input("Who has more followers? Type 'A' or 'B': ").lower()
-    # Compare follower counts of the two items
-    is_correct = compare_items(item_a, item_b)
-    # print(is_correct) # Test output
+    
+    # Get the user's choice with input validation
+    while True:
+      user_choice = input("Who has more followers? Type 'A' or 'B': ").lower()
+      if user_choice in ['a', 'b']:
+        break
+      else:
+        print("Invalid input. Please enter 'A' or 'B'.")
+    
     # Determine the correct answer based on the follower count comparison
     correct_answer = 'a' if compare_items(item_a, item_b) else 'b'
     # Check if the user's choice matches the correct answer
@@ -38,9 +42,16 @@ def main():
       # Inform the user of the correct answer if they guessed wrong
       print(f"Sorry, that's wrong. {correct_answer.upper()} has more followers.")
       
-        # Add a play again option
-    if input("Play again? (y/n): ").lower() != 'y':
-      break # Exit the loop and end the game
+    # Add a play again option with input validation
+    while True:
+      play_again = input("Play again? (y/n): ").lower()
+      if play_again in ['y', 'n']:
+        break
+      else:
+        print("Invalid input. Please enter 'y' or 'n'.")
+    
+    if play_again != 'y':
+      break  # Exit the loop and end the game
   
   # Display the follower counts of the last compared items
   print(f"A: {item_a['name']} has {item_a['follower_count']} million followers.")
