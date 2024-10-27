@@ -39,3 +39,7 @@
 - [ ] Create difficulty levels (e.g., more obscure items, closer rate/value differences)
 - [ ] Add a time limit for each choice
 
+## Documentation
+- [ ] Add comments to explain core logic functions
+- [ ] Create a basic README with game instructions and rules
+
