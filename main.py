@@ -16,6 +16,11 @@ def main():
   while True:  # Infinite loop to keep the game running until the user quits
     item_a = choose_random_item()
     item_b = choose_random_item()
+    
+    # Ensure item_b is different from item_a
+    while item_a == item_b:
+      item_b = choose_random_item()
+    
     # Display details of the two items for comparison
     print(f"Compare A: {item_a['name']}, a {item_a['description']}, from {item_a['country']}")
     print(f"Compare B: {item_b['name']}, a {item_b['description']}, from {item_b['country']}")
