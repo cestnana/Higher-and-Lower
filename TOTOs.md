@@ -16,8 +16,8 @@
 - [x] Display final score at the end of the game
 
 ## Error Handling
-- [ ] Validate user input (ensure it's a valid choice: A or B)
-- [ ] Handle invalid inputs gracefully
+- [x] Validate user input (ensure it's a valid choice: A or B)
+- [x] Handle invalid inputs gracefully
 
 ## Game Flow
 - [x] Create a game start function
