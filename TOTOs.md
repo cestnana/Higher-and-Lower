@@ -43,3 +43,7 @@
 - [ ] Add comments to explain core logic functions
 - [ ] Create a basic README with game instructions and rules
 
+## User Interface
+- [ ] Improve the display of choices (possibly add visual elements)
+- [ ] Show additional information about items after each round
+
