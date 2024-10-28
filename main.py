@@ -46,6 +46,8 @@ def main():
     else:
       # Inform the user of the correct answer if they guessed wrong
       print(f"Sorry, that's wrong. {correct_answer.upper()} has more followers.")
+      print(f"Game Over! Your final score: {score}")
+      score = 0  # Reset score when wrong
       
     # Add a play again option with input validation
     while True:
