@@ -43,28 +43,29 @@ def main():
       print("You're right!")
       score += 1
       print(f"Your current score: {score}")
+      continue  # Skip the play again prompt and continue to next round
     else:
       # Inform the user of the correct answer if they guessed wrong
       print(f"Sorry, that's wrong. {correct_answer.upper()} has more followers.")
       print(f"Game Over! Your final score: {score}")
       score = 0  # Reset score when wrong
       
-    # Add a play again option with input validation
-    while True:
-      play_again = input("Play again? (y/n): ").lower()
-      if play_again in ['y', 'n']:
-        break
-      else:
-        print("Invalid input. Please enter 'y' or 'n'.")
-    
-    if play_again != 'y':
-      break  # Exit the loop and end the game
+      # Add a play again option with input validation (only when wrong)
+      while True:
+        play_again = input("Play again? (y/n): ").lower()
+        if play_again in ['y', 'n']:
+          break
+        else:
+          print("Invalid input. Please enter 'y' or 'n'.")
+      
+      if play_again != 'y':
+        break  # Exit the loop and end the game
   
   # Display the follower counts of the last compared items
   print(f"A: {item_a['name']} has {item_a['follower_count']} million followers.")
   print(f"B: {item_b['name']} has {item_b['follower_count']} million followers.")
   # Print the final score after the game ends
-  print(f"Final score: {score}")
+  # print(f"Final score: {score}")
 
 # Run the main function to start the game
 main()
