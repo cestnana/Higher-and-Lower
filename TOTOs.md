@@ -29,9 +29,9 @@
 - [x] Ensure there are enough unique items for extended game-play
 
 ## Testing
-- [ ] Test the item selection logic
-- [ ] Verify correct comparison of rates/values
-- [ ] Ensure proper game flow (start to finish)
+- [x] Test the item selection logic
+- [x] Verify correct comparison of rates/values
+- [x] Ensure proper game flow (start to finish)
 
 ## Enhancements (After core logic is working)
 - [ ] Implement a high score system
