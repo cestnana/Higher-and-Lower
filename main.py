@@ -10,6 +10,28 @@ def compare_items(item_a, item_b):
   return item_a['follower_count'] > item_b['follower_count']
   # What if the follower counts are equal?
 
+def display_comparison(item_a, item_b):
+  print(f"Compare A: {item_a['name']}, a {item_a['description']}, from {item_a['country']}")
+  print(f"Compare B: {item_b['name']}, a {item_b['description']}, from {item_b['country']}")
+
+def get_user_choice():
+  while True:
+    user_choice = input("Who has more followers? Type 'A' or 'B': ").lower()
+    if user_choice in ['a', 'b']:
+      return user_choice
+    print("Invalid input. Please enter 'A' or 'B'.")
+
+def ask_play_again():
+  while True:
+    play_again = input("Play again? (y/n): ").lower()
+    if play_again in ['y', 'n']:
+      return play_again == 'y'
+    print("Invalid input. Please enter 'y' or 'n'.")
+
+def display_final_comparison(item_a, item_b):
+  print(f"A: {item_a['name']} has {item_a['follower_count']} million followers.")
+  print(f"B: {item_b['name']} has {item_b['follower_count']} million followers.")
+
 # Main function to run the game
 def main():
   score = 0  # Initialize score
@@ -21,17 +43,8 @@ def main():
     while item_a == item_b:
       item_b = choose_random_item()
     
-    # Display details of the two items for comparison
-    print(f"Compare A: {item_a['name']}, a {item_a['description']}, from {item_a['country']}")
-    print(f"Compare B: {item_b['name']}, a {item_b['description']}, from {item_b['country']}")
-    
-    # Get the user's choice with input validation
-    while True:
-      user_choice = input("Who has more followers? Type 'A' or 'B': ").lower()
-      if user_choice in ['a', 'b']:
-        break
-      else:
-        print("Invalid input. Please enter 'A' or 'B'.")
+    display_comparison(item_a, item_b)
+    user_choice = get_user_choice()
     
     # Determine the correct answer based on the follower count comparison
     correct_answer = 'a' if compare_items(item_a, item_b) else 'b'
@@ -51,21 +64,10 @@ def main():
       score = 0  # Reset score when wrong
       
       # Add a play again option with input validation (only when wrong)
-      while True:
-        play_again = input("Play again? (y/n): ").lower()
-        if play_again in ['y', 'n']:
-          break
-        else:
-          print("Invalid input. Please enter 'y' or 'n'.")
-      
-      if play_again != 'y':
+      if not ask_play_again():
         break  # Exit the loop and end the game
   
-  # Display the follower counts of the last compared items
-  print(f"A: {item_a['name']} has {item_a['follower_count']} million followers.")
-  print(f"B: {item_b['name']} has {item_b['follower_count']} million followers.")
-  # Print the final score after the game ends
-  # print(f"Final score: {score}")
+  display_final_comparison(item_a, item_b)
 
 # Run the main function to start the game
 main()
