@@ -35,3 +35,14 @@ This game challenges players to compare two randomly selected items and guess wh
 ## Data Structure
 
 The game expects `game_data.py` to contain a list of dictionaries with the following structure:
+
+data = [
+   {
+      'name': 'Item Name',
+      'description': 'Item Description',
+      'country': 'Country',
+      'follower_count': 1000000
+   },
+# ... more items
+]
+
