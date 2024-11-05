@@ -46,3 +46,11 @@ data = [
 # ... more items
 ]
 
+## Functions
+
+- `choose_random_item()`: Selects a random item from the data
+- `compare_items(item_a, item_b)`: Compares follower counts between two items
+- `display_comparison(item_a, item_b)`: Shows the comparison between two items
+- `get_user_choice()`: Gets and validates user input
+- `ask_play_again()`: Handles the play again prompt
+- `display_final_comparison(item_a, item_b)`: Shows the final follower counts
