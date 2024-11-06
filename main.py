@@ -1,5 +1,6 @@
 from game_data import data  # Import the 'data' containing information about the items
 import random # Import 'random' to select items randomly
+import art
 
 def choose_random_item():
   # Select a random item from the data list
@@ -34,6 +35,7 @@ def display_final_comparison(item_a, item_b):
 
 # Main function to run the game
 def main():
+  print(art.logo)
   score = 0  # Initialize score
   while True:  # Infinite loop to keep the game running until the user quits
     item_a = choose_random_item()
