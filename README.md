@@ -54,3 +54,7 @@ data = [
 - `get_user_choice()`: Gets and validates user input
 - `ask_play_again()`: Handles the play again prompt
 - `display_final_comparison(item_a, item_b)`: Shows the final follower counts
+
+## Contributing
+
+Feel free to fork this project and submit pull requests with improvements.
