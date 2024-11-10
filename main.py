@@ -13,6 +13,7 @@ def compare_items(item_a, item_b):
 
 def display_comparison(item_a, item_b):
   print(f"Compare A: {item_a['name']}, a {item_a['description']}, from {item_a['country']}")
+  print(art.vs)
   print(f"Compare B: {item_b['name']}, a {item_b['description']}, from {item_b['country']}")
 
 def get_user_choice():
