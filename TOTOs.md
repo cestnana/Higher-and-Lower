@@ -40,7 +40,7 @@
 - [ ] Add a time limit for each choice
 
 ## Documentation
-- [ ] Add comments to explain core logic functions
+- [x] Add comments to explain core logic functions
 - [x] Create a basic README with game instructions and rules
 
 ## User Interface
