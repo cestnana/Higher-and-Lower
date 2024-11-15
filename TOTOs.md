@@ -45,5 +45,5 @@
 
 ## User Interface
 - [x] Improve the display of choices (possibly add visual elements)
-- [ ] Show additional information about items after each round
+- [x] Show additional information about items after each round
 
