@@ -36,7 +36,7 @@
 ## Enhancements (After core logic is working)
 - [?] Implement a high score system
 - [?] Add categories for items (e.g., countries by population, movies by box office)
-- [ ] Create difficulty levels (e.g., more obscure items, closer rate/value differences)
+- [?] Create difficulty levels (e.g., more obscure items, closer rate/value differences)
 - [ ] Add a time limit for each choice
 
 ## Documentation
